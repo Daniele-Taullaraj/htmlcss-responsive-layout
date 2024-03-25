@@ -41,6 +41,7 @@ header {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 nav {
+    margin: 0 2rem;
     background-color: pink;
     /* display: flex; */
     justify-content: space-between;
@@ -82,6 +83,10 @@ nav {
 /* 
 main card
  */
+.main-card {
+    padding-bottom: 0;
+}
+
 .main-card-txt button {
     padding: 0.5rem 5rem;
     border-radius: 1rem;
@@ -93,6 +98,9 @@ main card
 
 .main-card-img img {
     width: 100%;
+    display: block;
+    position: relative;
+    bottom: 0;
 }
 
 /* 
@@ -183,7 +191,7 @@ planning-2
     padding-bottom: 4rem;
 }
 
-.partners .container {
+.partners .container:first-child {
     margin-top: 1rem;
     /* display: flex; */
     flex-direction: column;
@@ -205,9 +213,12 @@ planning-2
 /* 
 profile card
  */
-.partners-card {
+.partners .container:nth-child(2),
+.partners .container:nth-child(3),
+.partners .container:nth-child(4) {
     background-color: #9792E4;
     border-radius: 3rem;
+    margin-bottom: 1rem;
     /* display: flex; */
     flex-direction: column;
     align-items: center;
@@ -245,11 +256,11 @@ profile card
     padding-bottom: 2rem;
 }
 
-.benefit .container>h1 {
+.benefit>h1 {
     color: white;
     font-size: 2.2rem;
     text-align: center;
-    margin: 2rem 0 3rem;
+    padding-top: 2rem;
 }
 
 .benefit .card {
@@ -404,4 +415,72 @@ footer .container>p {
 
 footer a {
     color: #9792E4;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*  RESPONSIVE */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (min-width:480px) and (max-width:768px) {
+    header {
+        background-color: red;
+    }
+
+    /* 
+    GET APPLICATION
+     */
+    .get-application .container {
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+
+    .get-application .container .main-card {
+        position: relative;
+        width: calc((99% / 3) * 2);
+    }
+
+    .get-application .container .standard-card {
+        width: calc(96% / 3);
+    }
+
+    .main-card-img {
+        width: 60%;
+        /* position: absolute;
+        bottom: 0; */
+    }
+
+
+    /* 
+    PARTNERS
+     */
+    .partners .container:nth-child(2),
+    .partners .container:nth-child(3),
+    .partners .container:nth-child(4) {
+        background-color: red;
+        flex-direction: row;
+    }
+
+    .profile-img {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+
+    /* 
+    BENEFIT
+     */
+    .benefit .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+
+    .benefit .card {
+        width: calc(97% / 2);
+    }
+
+
 }
