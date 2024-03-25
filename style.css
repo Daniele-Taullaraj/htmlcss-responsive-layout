@@ -1,5 +1,407 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* GENERAL */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    margin: 0 2rem;
+    padding: 2rem 0;
+}
+
+.card {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg-azzurro {
+    background-color: #B5DDFF;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* HEADER */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+header {
+    background-color: #0084FD;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* NAVBAR */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+nav {
+    background-color: pink;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    padding: 0.5rem 0;
+}
+
+.nav-menu i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* GET APPLICATION */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.get-application {
+    background-color: green;
+}
+
+.get-application .container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-azzurro p {
+    line-height: 1.7rem;
+    margin-top: 1.5rem;
+}
+
+.bg-azzurro h3 {
+    color: #0084FD;
+}
+
+/* 
+main card
+ */
+.main-card-txt button {
+    padding: 0.5rem 5rem;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    background-color: #0084FD;
+    margin: 1.5rem 0;
+}
+
+.main-card-img img {
+    width: 100%;
+}
+
+/* 
+standard card
+ */
+.standard-card {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.standard-card i {
+    color: #0084FD;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.standard-card p {
+    text-align: center;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* STRATEGIC PLANNING */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.strategic-planning {
+    background-color: #9792E4;
+    padding-bottom: 2rem;
+}
+
+/* 
+planning1
+ */
+.planning-1 img {
+    width: 100%;
+    margin-bottom: 3rem
+}
+
+.planning-1 h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.planning-1 p {
+    line-height: 1.8rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* 
+planning-2
+ */
+
+.planning-2 {
+    background-color: white;
+    border-radius: 3rem;
+    padding: 2rem;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.planning-2 img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.planning-2 p {
+    text-align: center;
+    line-height: 1.8rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.planning-2 i {
+    background-color: #9792E4;
+    padding: 1rem;
+    border-radius: 50%;
+    color: black;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*  PARTENRS */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.partners {
+    padding-bottom: 4rem;
+}
+
+.partners .container {
+    margin-top: 1rem;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners .container h1 {
+    color: #9792E4;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.partners .container>p {
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+/* 
+profile card
+ */
+.partners-card {
+    background-color: #9792E4;
+    border-radius: 3rem;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 50%;
+}
+
+.profile-img img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info p {
+    margin: 1rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+.profile-info h3 {
+    color: white;
+    text-align: center;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*  BENEFIT */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.benefit {
+    background-color: #9792E4;
+    padding-bottom: 2rem;
+}
+
+.benefit .container>h1 {
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+
+.benefit .card {
+    background-color: white;
+    color: #9792E4;
+    margin-top: 2rem;
+}
+
+.benefit .card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.benefit .card h2 {
+    margin-bottom: 1rem;
+}
+
+.benefit .card p {
+    color: black;
+    line-height: 1.5rem;
+}
+
+
+.benefit .card button {
+    background-color: #9792E4;
+    color: white;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    padding: 0.7rem 3rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*  ABOUT US */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* 
+about us left
+ */
+.about-us .container h1 {
+    color: #9792E4;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-us .container p {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 
+about us right
+ */
+.linkedin-profile {
+    width: 50%;
+    position: relative;
+}
+
+.linkedin-profile img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.linkedin-profile i {
+    color: #9792E4;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-us-right h2 {
+    color: #9792E4;
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+
+.about-us-right button {
+    background-color: #9792E4;
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*  GET STARTED */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.get-started {
+    background-color: #9792E4;
+    padding-bottom: 2rem;
+}
+
+.get-started .container {
+    /* display:flex; */
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.get-started .container span {
+    display: inline-block;
+    margin: 2rem 0 1rem;
+}
+
+.get-started .container h1 {
+    font-size: 3rem;
+    color: orange;
+    margin: 2rem 0;
+}
+
+.get-started .container p {
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.get-started .container button {
+    background-color: white;
+    color: #9792E4;
+    font-weight: bold;
+    padding: 1rem 6rem;
+    border-radius: 1.5rem;
+    border: none;
+    margin: 1.5rem 0;
+}
+
+.get-started .container a {
+    color: white;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*  FOOTER */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+footer .container>p {
+    margin-bottom: 3rem;
+}
+
+footer a {
+    color: #9792E4;
 }
