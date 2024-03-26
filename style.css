@@ -61,10 +61,6 @@ nav {
 /* GET APPLICATION */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.get-application {
-    background-color: green;
-}
-
 .get-application .container {
     /* display: flex; */
     flex-direction: column;
@@ -142,7 +138,7 @@ planning1
 .planning-1 h2 {
     font-size: 2rem;
     color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 2cqi;
 }
 
 .planning-1 p {
@@ -379,6 +375,11 @@ about us right
     margin: 2rem 0;
 }
 
+.get-started .container h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
 .get-started .container p {
     line-height: 1.5rem;
     text-align: center;
@@ -448,10 +449,7 @@ footer a {
 
     .main-card-img {
         width: 60%;
-        /* position: absolute;
-        bottom: 0; */
     }
-
 
     /* 
     PARTNERS
@@ -459,8 +457,8 @@ footer a {
     .partners .container:nth-child(2),
     .partners .container:nth-child(3),
     .partners .container:nth-child(4) {
-        background-color: red;
         flex-direction: row;
+        align-items: center;
     }
 
     .profile-img {
@@ -468,6 +466,11 @@ footer a {
         margin-left: 1rem;
     }
 
+    .profile-info p,
+    .profile-info h3 {
+        margin-left: 2rem;
+        text-align: left;
+    }
 
     /* 
     BENEFIT
@@ -482,5 +485,202 @@ footer a {
         width: calc(97% / 2);
     }
 
+    /* 
+    ABOUT US
+     */
 
+    .about-us .container {
+        display: flex;
+    }
+
+    .about-us-right {
+        width: 40%;
+        margin-left: 2rem;
+    }
+
+    .about-us-left {
+        width: 60%;
+    }
+
+    .linkedin-profile {
+        margin: 0 auto;
+    }
+
+    .linkedin-profile i {
+        right: -0.5rem;
+        font-size: 2rem;
+    }
+
+    /* 
+    GET STARTED
+     */
+    .get-started .container,
+    footer .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width:768px) {
+    header {
+        background-color: yellow;
+
+    }
+
+    .container,
+    nav,
+    .get-started .container,
+    footer .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* 
+    GET APPLICATION
+     */
+    .get-application .container {
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+
+    .get-application .container .main-card {
+        position: relative;
+        width: calc((99% / 3) * 2);
+    }
+
+    .get-application .container .standard-card {
+        width: calc(96% / 3);
+    }
+
+    .main-card {
+        display: flex;
+    }
+
+    .main-card-img {
+        width: 100%;
+        position: relative;
+    }
+
+    .main-card-img img {
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* 
+    STRATEGIC PLANNING
+     */
+    .strategic-planning .container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .planning-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planning-2 {
+        padding: 1.5rem;
+        width: 70%;
+        margin-left: 2rem;
+    }
+
+    .planning-1 img {
+        width: 60%;
+    }
+
+    .planning-2 img {
+        width: 50%;
+    }
+
+    .planning-1 p {
+        margin-bottom: 0;
+    }
+
+    /* 
+    PARTNERS
+     */
+    .partners .container:nth-child(2),
+    .partners .container:nth-child(3),
+    .partners .container:nth-child(4) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 30%;
+        margin-left: 1rem;
+    }
+
+    .profile-info p,
+    .profile-info h3 {
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    /* 
+    BENEFIT
+     */
+    .benefit .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+
+    .benefit .card {
+        width: calc(94% / 3);
+    }
+
+    /* 
+    ABOUT US
+     */
+
+    .about-us .container {
+        display: flex;
+    }
+
+    .about-us-right {
+        width: 30%;
+        margin-left: 2rem;
+    }
+
+    .about-us-left {
+        width: 70%;
+    }
+
+    .linkedin-profile {
+        margin: 0 auto;
+    }
+
+    .linkedin-profile i {
+        right: -0.5rem;
+        font-size: 2rem;
+    }
+
+    /* 
+    GET STARTED
+     */
+    .get-started .container,
+    footer .container {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .get-started .container p,
+    footer .container p {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    footer .container>p {
+        margin-bottom: 2rem;
+    }
 }
