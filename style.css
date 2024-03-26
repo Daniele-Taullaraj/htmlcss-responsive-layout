@@ -28,11 +28,7 @@
     background-color: #B5DDFF;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* HEADER */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-header {
+.bg-blue {
     background-color: #0084FD;
 }
 
@@ -42,7 +38,6 @@ header {
 
 nav {
     margin: 0 2rem;
-    background-color: pink;
     /* display: flex; */
     justify-content: space-between;
     align-items: center;
@@ -55,6 +50,23 @@ nav {
 .nav-menu i {
     color: white;
     font-size: 1.5rem;
+}
+
+.nav-dekstop {
+    display: none;
+}
+
+.nav-dekstop a {
+    color: white;
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+
+.nav-dekstop button {
+    border: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -95,8 +107,6 @@ main card
 .main-card-img img {
     width: 100%;
     display: block;
-    position: relative;
-    bottom: 0;
 }
 
 /* 
@@ -138,7 +148,7 @@ planning1
 .planning-1 h2 {
     font-size: 2rem;
     color: white;
-    margin-bottom: 2cqi;
+    margin-bottom: 2rem;
 }
 
 .planning-1 p {
@@ -424,9 +434,6 @@ footer a {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @media screen and (min-width:480px) and (max-width:768px) {
-    header {
-        background-color: red;
-    }
 
     /* 
     GET APPLICATION
@@ -435,20 +442,23 @@ footer a {
         flex-direction: row;
         align-items: stretch;
         flex-wrap: wrap;
-        gap: 2%;
+        gap: 1rem;
     }
 
     .get-application .container .main-card {
-        position: relative;
-        width: calc((99% / 3) * 2);
+        width: calc(((100% - 2rem) / 3) * 2 + 1rem);
     }
 
     .get-application .container .standard-card {
-        width: calc(96% / 3);
+        width: calc((100% - 2rem) / 3);
     }
 
     .main-card-img {
-        width: 60%;
+        width: 50%;
+    }
+
+    .card {
+        margin-top: 0;
     }
 
     /* 
@@ -524,10 +534,6 @@ footer a {
 
 
 @media screen and (min-width:768px) {
-    header {
-        background-color: yellow;
-
-    }
 
     .container,
     nav,
@@ -538,22 +544,32 @@ footer a {
     }
 
     /* 
+    nav
+     */
+    .nav-dekstop {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    /* 
     GET APPLICATION
      */
     .get-application .container {
         flex-direction: row;
         align-items: stretch;
         flex-wrap: wrap;
-        gap: 2%;
+        gap: 1rem;
     }
 
     .get-application .container .main-card {
-        position: relative;
-        width: calc((99% / 3) * 2);
+        width: calc(((100% - 2rem) / 3) * 2 + 1rem);
     }
 
     .get-application .container .standard-card {
-        width: calc(96% / 3);
+        width: calc((100% - 2rem) / 3);
     }
 
     .main-card {
@@ -568,6 +584,10 @@ footer a {
     .main-card-img img {
         position: absolute;
         bottom: 0;
+    }
+
+    .card {
+        margin-top: 0;
     }
 
     /* 
@@ -587,22 +607,27 @@ footer a {
         align-items: center;
     }
 
-    .planning-2 {
-        padding: 1.5rem;
-        width: 70%;
-        margin-left: 2rem;
-    }
-
     .planning-1 img {
         width: 60%;
     }
 
-    .planning-2 img {
-        width: 50%;
-    }
-
     .planning-1 p {
         margin-bottom: 0;
+    }
+
+    .planning-2 {
+        padding: 1.5rem;
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .planning-2 img {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .planning-2 p {
+        margin: 0.2rem 0;
     }
 
     /* 
